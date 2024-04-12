@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Generator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="gradient">
+    <h1>Background Gradient</h1>
+    <input id="color1" type="color" name="color1" value="#00EEFF"></input>
+    <input id="color2" type="color" name="color2" value="#F40BB6"></input>
+    <h2>Current CSS Background</h2>
+    <div class="output-container">
+        <h3 id="color-output"></h3>
+    </div>
+    <div class="copy-container">
+        <button class="copy-button" id="copy-button">
+            <i class="fa fa-copy"></i>
+        </button>
+    </div>
+    <button class="random-color" id="random-color" role="button"><span class="text">Generate a random gradient color</span></button>
+    <script src="script.js"></script>
+</body>
+</html>
