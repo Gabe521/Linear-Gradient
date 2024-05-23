@@ -5,21 +5,6 @@ const body = document.getElementById('gradient');
 const randomColor = document.getElementById('random-color');
 const copyButton = document.getElementById('copy-button');
 
-// Copy linear gradient output text
-let selectText = (colorOutput) => {
-    var node = document.getElementById( colorOutput );
-    if ( document.selection ) {
-        var range = document.body.createTextRange();
-        range.moveToElementText( node  );
-        range.select();
-    } else if ( window.getSelection ) {
-        var range = document.createRange();
-        range.selectNodeContents( node );
-        window.getSelection().removeAllRanges();
-        window.getSelection().addRange( range );
-    }
-}
-
 // Generate a random 6-digit color hex code
 let generateColor = () => {
     // Set the avalaible characters for the hex code
